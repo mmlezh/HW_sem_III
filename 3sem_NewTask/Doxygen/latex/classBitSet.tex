@@ -1,0 +1,397 @@
+\hypertarget{classBitSet}{}\doxysection{Bit\+Set Class Reference}
+\label{classBitSet}\index{BitSet@{BitSet}}
+
+
+класс \mbox{\hyperlink{classBitSet}{Bit\+Set}} реализует подмножество наперед заданного прямоугольника X$\ast$Y  
+
+
+
+
+{\ttfamily \#include $<$Bit\+Set.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBitSet_ac45e40bebdf5c87da0d8ca441094ab7c}{Bit\+Set}} ()
+\item 
+\mbox{\hyperlink{classBitSet_a546766a80fde14b18075de0db1700edc}{Bit\+Set}} (\mbox{\hyperlink{classLineSegment}{Line\+Segment}} X, \mbox{\hyperlink{classLineSegment}{Line\+Segment}} Y)
+\begin{DoxyCompactList}\small\item\em Конструктор по параметрам \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBitSet_a46c9e48f7e33dbf4d97db3397955273f}{Bit\+Set}} (\mbox{\hyperlink{classBitSet}{Bit\+Set}} \&object)
+\begin{DoxyCompactList}\small\item\em Копи-\/конструктор \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBitSet_a7c3169ddf8305d0689300a3d35bc3ebb}{delete\+\_\+value}} (const int x, const int y)
+\begin{DoxyCompactList}\small\item\em Метод удаления точки из множества \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBitSet_ab5afe88da8a8e3676883cf924a5a6742}\label{classBitSet_ab5afe88da8a8e3676883cf924a5a6742}} 
+void {\bfseries delete\+\_\+all} ()
+\begin{DoxyCompactList}\small\item\em Метод очистки множества \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBitSet_ae949bba30237aa6e0f0b37050cc86095}{add\+\_\+value}} (const int x, const int y)
+\begin{DoxyCompactList}\small\item\em Метод добавления точки в множество \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBitSet_a940492bf741685cf2221b4f5c1ee048d}{get\+\_\+value}} (const int x, const int y)
+\begin{DoxyCompactList}\small\item\em Метод определения принадлежности точки множеству \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBitSet_af6f1240eeb5f21eef850002c95a4aa12}{get\+\_\+min}} (const int mode)
+\begin{DoxyCompactList}\small\item\em Метод получения минимальной координаты по X/Y. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBitSet_ad541fc73174ce8ab62710dbc31dfd96c}{get\+\_\+max}} (const int mode)
+\begin{DoxyCompactList}\small\item\em Метод получения максимальной координаты по X/Y. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBitSet_a197eac92c3019fde7043e8cfe2f4faf4}{get\+\_\+lenght}} ()
+\begin{DoxyCompactList}\small\item\em Метод получения максимального кол-\/ва точек в X$\ast$Y. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLineSegment}{Line\+Segment}} \mbox{\hyperlink{classBitSet_ac146cb7de92948841f723d571d5b57b9}{get\+\_\+\+Ox}} ()
+\begin{DoxyCompactList}\small\item\em Метод получения X из X$\ast$Y. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLineSegment}{Line\+Segment}} \mbox{\hyperlink{classBitSet_aea5da560cb32474a10d6676d3f7e69a6}{get\+\_\+\+Oy}} ()
+\begin{DoxyCompactList}\small\item\em Метод получения Y из X$\ast$Y. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBitSet}{Bit\+Set}} \& \mbox{\hyperlink{classBitSet_ac17dc27c49d732dea9f6352c2b718e71}{operator=}} (const \mbox{\hyperlink{classBitSet}{Bit\+Set}} \&object)
+\begin{DoxyCompactList}\small\item\em Оператор присваивания \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBitSet}{Bit\+Set}} \mbox{\hyperlink{classBitSet_a1787efcb3eb61406a213406baf64f490}{operator+}} (const \mbox{\hyperlink{classBitSet}{Bit\+Set}} \&object) const
+\begin{DoxyCompactList}\small\item\em Оператор объединения \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBitSet}{Bit\+Set}} \mbox{\hyperlink{classBitSet_ad79e9eb7cdb37c321b4cad12ab25ded3}{operator$\ast$}} (const \mbox{\hyperlink{classBitSet}{Bit\+Set}} \&object) const
+\begin{DoxyCompactList}\small\item\em Оператор пересечения \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBitSet_a23be866f951d419d129419908f710c1c}{change\+\_\+area}} (const \mbox{\hyperlink{classLineSegment}{Line\+Segment}} X, const \mbox{\hyperlink{classLineSegment}{Line\+Segment}} Y)
+\begin{DoxyCompactList}\small\item\em Метод изменения области X$\ast$Y подмножества которой мы рассматриваем в задаче \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBitSet_a4d8ef2f6297d40bf11185ae534900fd6}{count\+\_\+points}} ()
+\begin{DoxyCompactList}\small\item\em Метод подсчета точек к множестве \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBitSet_a5d6606876898d7554f9673cfd77fabf4}{get\+\_\+point}} (int it)
+\begin{DoxyCompactList}\small\item\em Метод получения i-\/ой точки по счету (в порядке нумерации) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBitSet_ab6f2bc02f3e1185fd86b163e886b1dbf}\label{classBitSet_ab6f2bc02f3e1185fd86b163e886b1dbf}} 
+{\bfseries $\sim$\+Bit\+Set} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classBitSet_ac0735c48437d8e5a37db496d2f8e07af}{r\+Bit\+Set}} (FILE $\ast$input, \mbox{\hyperlink{classBitSet}{Bit\+Set}} \&object, \mbox{\hyperlink{classLineSegment}{Line\+Segment}} X, \mbox{\hyperlink{classLineSegment}{Line\+Segment}} Y)
+\begin{DoxyCompactList}\small\item\em Функция для считывания элемента класса \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBitSet_a8355cce72f3fba83849d557da785f8e0}{w\+Bit\+Set}} (FILE $\ast$output, \mbox{\hyperlink{classBitSet}{Bit\+Set}} \&object)
+\begin{DoxyCompactList}\small\item\em Функция для выведения элемента класса \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+класс \mbox{\hyperlink{classBitSet}{Bit\+Set}} реализует подмножество наперед заданного прямоугольника X$\ast$Y 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBitSet_ac45e40bebdf5c87da0d8ca441094ab7c}\label{classBitSet_ac45e40bebdf5c87da0d8ca441094ab7c}} 
+\index{BitSet@{BitSet}!BitSet@{BitSet}}
+\index{BitSet@{BitSet}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{BitSet()}{BitSet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Bit\+Set\+::\+Bit\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Конструктор по умолчанию. \mbox{\Hypertarget{classBitSet_a546766a80fde14b18075de0db1700edc}\label{classBitSet_a546766a80fde14b18075de0db1700edc}} 
+\index{BitSet@{BitSet}!BitSet@{BitSet}}
+\index{BitSet@{BitSet}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{BitSet()}{BitSet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Bit\+Set\+::\+Bit\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLineSegment}{Line\+Segment}}}]{X,  }\item[{\mbox{\hyperlink{classLineSegment}{Line\+Segment}}}]{Y }\end{DoxyParamCaption})}
+
+
+
+Конструктор по параметрам 
+
+Конструирует пустое помножество декартового квадрата X$\ast$Y. 
+\begin{DoxyParams}{Parameters}
+{\em X} & первый сомножитель декартового произведения \\
+\hline
+{\em Y} & второй сомножитель декартового произведения \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBitSet_a46c9e48f7e33dbf4d97db3397955273f}\label{classBitSet_a46c9e48f7e33dbf4d97db3397955273f}} 
+\index{BitSet@{BitSet}!BitSet@{BitSet}}
+\index{BitSet@{BitSet}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{BitSet()}{BitSet()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Bit\+Set\+::\+Bit\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBitSet}{Bit\+Set}} \&}]{object }\end{DoxyParamCaption})}
+
+
+
+Копи-\/конструктор 
+
+Конструирует копию элемента класса. 
+\begin{DoxyParams}{Parameters}
+{\em object} & объект класса, который мы копируем. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBitSet_ae949bba30237aa6e0f0b37050cc86095}\label{classBitSet_ae949bba30237aa6e0f0b37050cc86095}} 
+\index{BitSet@{BitSet}!add\_value@{add\_value}}
+\index{add\_value@{add\_value}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{add\_value()}{add\_value()}}
+{\footnotesize\ttfamily int Bit\+Set\+::add\+\_\+value (\begin{DoxyParamCaption}\item[{const int}]{x,  }\item[{const int}]{y }\end{DoxyParamCaption})}
+
+
+
+Метод добавления точки в множество 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/овая координата добавляемой точки \\
+\hline
+{\em y} & y-\/овая координата добавляемой точки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает ERROR\+\_\+\+OUT если (x, y) непринадлежит X$\ast$Y и OK\+\_\+\+OUT иначе 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBitSet_a23be866f951d419d129419908f710c1c}\label{classBitSet_a23be866f951d419d129419908f710c1c}} 
+\index{BitSet@{BitSet}!change\_area@{change\_area}}
+\index{change\_area@{change\_area}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{change\_area()}{change\_area()}}
+{\footnotesize\ttfamily int Bit\+Set\+::change\+\_\+area (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLineSegment}{Line\+Segment}}}]{X,  }\item[{const \mbox{\hyperlink{classLineSegment}{Line\+Segment}}}]{Y }\end{DoxyParamCaption})}
+
+
+
+Метод изменения области X$\ast$Y подмножества которой мы рассматриваем в задаче 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & новая Ox \\
+\hline
+{\em Y} & новая Oy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERROR\+\_\+\+OUT если не удалось перезаписать точки исходного множества в новое, OK\+\_\+\+OUT иначе 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBitSet_a4d8ef2f6297d40bf11185ae534900fd6}\label{classBitSet_a4d8ef2f6297d40bf11185ae534900fd6}} 
+\index{BitSet@{BitSet}!count\_points@{count\_points}}
+\index{count\_points@{count\_points}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{count\_points()}{count\_points()}}
+{\footnotesize\ttfamily int Bit\+Set\+::count\+\_\+points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод подсчета точек к множестве 
+
+\begin{DoxyReturn}{Returns}
+Кол-\/во точек в множестве 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBitSet_a7c3169ddf8305d0689300a3d35bc3ebb}\label{classBitSet_a7c3169ddf8305d0689300a3d35bc3ebb}} 
+\index{BitSet@{BitSet}!delete\_value@{delete\_value}}
+\index{delete\_value@{delete\_value}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{delete\_value()}{delete\_value()}}
+{\footnotesize\ttfamily int Bit\+Set\+::delete\+\_\+value (\begin{DoxyParamCaption}\item[{const int}]{x,  }\item[{const int}]{y }\end{DoxyParamCaption})}
+
+
+
+Метод удаления точки из множества 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/овая координата удаляемой точки \\
+\hline
+{\em y} & y-\/овая координата удаляемой точки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает ERROR\+\_\+\+OUT если (x, y) непринадлежит X$\ast$Y и OK\+\_\+\+OUT иначе 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBitSet_a197eac92c3019fde7043e8cfe2f4faf4}\label{classBitSet_a197eac92c3019fde7043e8cfe2f4faf4}} 
+\index{BitSet@{BitSet}!get\_lenght@{get\_lenght}}
+\index{get\_lenght@{get\_lenght}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{get\_lenght()}{get\_lenght()}}
+{\footnotesize\ttfamily int Bit\+Set\+::get\+\_\+lenght (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод получения максимального кол-\/ва точек в X$\ast$Y. 
+
+\begin{DoxyReturn}{Returns}
+Возвращает максимального кол-\/ва точек в X$\ast$Y 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBitSet_ad541fc73174ce8ab62710dbc31dfd96c}\label{classBitSet_ad541fc73174ce8ab62710dbc31dfd96c}} 
+\index{BitSet@{BitSet}!get\_max@{get\_max}}
+\index{get\_max@{get\_max}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{get\_max()}{get\_max()}}
+{\footnotesize\ttfamily int Bit\+Set\+::get\+\_\+max (\begin{DoxyParamCaption}\item[{const int}]{mode }\end{DoxyParamCaption})}
+
+
+
+Метод получения максимальной координаты по X/Y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & флаг для определения по какой координате ищем max \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает значение максимальной координаты точек из множества, если таковых нет, то возвращает 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBitSet_af6f1240eeb5f21eef850002c95a4aa12}\label{classBitSet_af6f1240eeb5f21eef850002c95a4aa12}} 
+\index{BitSet@{BitSet}!get\_min@{get\_min}}
+\index{get\_min@{get\_min}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{get\_min()}{get\_min()}}
+{\footnotesize\ttfamily int Bit\+Set\+::get\+\_\+min (\begin{DoxyParamCaption}\item[{const int}]{mode }\end{DoxyParamCaption})}
+
+
+
+Метод получения минимальной координаты по X/Y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & флаг для определения по какой координате ищем min \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает значение минимальной координаты точек из множества, если таковых нет, то возвращает 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBitSet_ac146cb7de92948841f723d571d5b57b9}\label{classBitSet_ac146cb7de92948841f723d571d5b57b9}} 
+\index{BitSet@{BitSet}!get\_Ox@{get\_Ox}}
+\index{get\_Ox@{get\_Ox}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{get\_Ox()}{get\_Ox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineSegment}{Line\+Segment}} Bit\+Set\+::get\+\_\+\+Ox (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод получения X из X$\ast$Y. 
+
+\begin{DoxyReturn}{Returns}
+Возвращает X из X$\ast$Y 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBitSet_aea5da560cb32474a10d6676d3f7e69a6}\label{classBitSet_aea5da560cb32474a10d6676d3f7e69a6}} 
+\index{BitSet@{BitSet}!get\_Oy@{get\_Oy}}
+\index{get\_Oy@{get\_Oy}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{get\_Oy()}{get\_Oy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLineSegment}{Line\+Segment}} Bit\+Set\+::get\+\_\+\+Oy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод получения Y из X$\ast$Y. 
+
+\begin{DoxyReturn}{Returns}
+Возвращает Y из X$\ast$Y 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBitSet_a5d6606876898d7554f9673cfd77fabf4}\label{classBitSet_a5d6606876898d7554f9673cfd77fabf4}} 
+\index{BitSet@{BitSet}!get\_point@{get\_point}}
+\index{get\_point@{get\_point}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{get\_point()}{get\_point()}}
+{\footnotesize\ttfamily int Bit\+Set\+::get\+\_\+point (\begin{DoxyParamCaption}\item[{int}]{it }\end{DoxyParamCaption})}
+
+
+
+Метод получения i-\/ой точки по счету (в порядке нумерации) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em it} & номер элемента по порядку \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Номер элемента в массиве, иначе -\/1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBitSet_a940492bf741685cf2221b4f5c1ee048d}\label{classBitSet_a940492bf741685cf2221b4f5c1ee048d}} 
+\index{BitSet@{BitSet}!get\_value@{get\_value}}
+\index{get\_value@{get\_value}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{get\_value()}{get\_value()}}
+{\footnotesize\ttfamily int Bit\+Set\+::get\+\_\+value (\begin{DoxyParamCaption}\item[{const int}]{x,  }\item[{const int}]{y }\end{DoxyParamCaption})}
+
+
+
+Метод определения принадлежности точки множеству 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/овая координата точки, которую мы хотим проверить \\
+\hline
+{\em y} & y-\/овая координата точки, которую мы хотим проверить \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает ERROR\+\_\+\+OUT если (x, y) непринадлежит X$\ast$Y 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBitSet_ad79e9eb7cdb37c321b4cad12ab25ded3}\label{classBitSet_ad79e9eb7cdb37c321b4cad12ab25ded3}} 
+\index{BitSet@{BitSet}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBitSet}{Bit\+Set}} Bit\+Set\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBitSet}{Bit\+Set}} \&}]{object }\end{DoxyParamCaption}) const}
+
+
+
+Оператор пересечения 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & Элемент класса, с которым ищем пересечение \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Пересечение двух ножеств 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBitSet_a1787efcb3eb61406a213406baf64f490}\label{classBitSet_a1787efcb3eb61406a213406baf64f490}} 
+\index{BitSet@{BitSet}!operator+@{operator+}}
+\index{operator+@{operator+}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBitSet}{Bit\+Set}} Bit\+Set\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBitSet}{Bit\+Set}} \&}]{object }\end{DoxyParamCaption}) const}
+
+
+
+Оператор объединения 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & Элемент класса, с которым ищем объединение \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Объединение двух ножеств 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBitSet_ac17dc27c49d732dea9f6352c2b718e71}\label{classBitSet_ac17dc27c49d732dea9f6352c2b718e71}} 
+\index{BitSet@{BitSet}!operator=@{operator=}}
+\index{operator=@{operator=}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBitSet}{Bit\+Set}} \& Bit\+Set\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBitSet}{Bit\+Set}} \&}]{object }\end{DoxyParamCaption})}
+
+
+
+Оператор присваивания 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & Элемент класса, к которому присваиваем \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classBitSet_ac0735c48437d8e5a37db496d2f8e07af}\label{classBitSet_ac0735c48437d8e5a37db496d2f8e07af}} 
+\index{BitSet@{BitSet}!rBitSet@{rBitSet}}
+\index{rBitSet@{rBitSet}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{rBitSet}{rBitSet}}
+{\footnotesize\ttfamily int r\+Bit\+Set (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{input,  }\item[{\mbox{\hyperlink{classBitSet}{Bit\+Set}} \&}]{object,  }\item[{\mbox{\hyperlink{classLineSegment}{Line\+Segment}}}]{X,  }\item[{\mbox{\hyperlink{classLineSegment}{Line\+Segment}}}]{Y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Функция для считывания элемента класса 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & поток из которого мы считываем \\
+\hline
+{\em object} & Элемент класса который мы считываем \\
+\hline
+{\em X} & заранее заданное поле Ox \\
+\hline
+{\em Y} & заранее заданное поле Oy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERROR\+\_\+\+OUT если ввод некорректный, иначе OK\+\_\+\+OUT 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBitSet_a8355cce72f3fba83849d557da785f8e0}\label{classBitSet_a8355cce72f3fba83849d557da785f8e0}} 
+\index{BitSet@{BitSet}!wBitSet@{wBitSet}}
+\index{wBitSet@{wBitSet}!BitSet@{BitSet}}
+\doxysubsubsection{\texorpdfstring{wBitSet}{wBitSet}}
+{\footnotesize\ttfamily void w\+Bit\+Set (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{output,  }\item[{\mbox{\hyperlink{classBitSet}{Bit\+Set}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Функция для выведения элемента класса 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & поток в который мы выводим \\
+\hline
+{\em object} & Элемент класса который мы выводим \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERROR\+\_\+\+OUT если ввод некорректный, иначе OK\+\_\+\+OUT 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jogy/Рабочий стол/эвм/\+HW3/\+New\+Task/Bit\+Set.\+hpp\end{DoxyCompactItemize}

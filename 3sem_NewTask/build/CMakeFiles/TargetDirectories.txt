@@ -1,0 +1,3 @@
+/home/jogy/Рабочий стол/эвм/HW3/NewTask/build/CMakeFiles/main.dir
+/home/jogy/Рабочий стол/эвм/HW3/NewTask/build/CMakeFiles/edit_cache.dir
+/home/jogy/Рабочий стол/эвм/HW3/NewTask/build/CMakeFiles/rebuild_cache.dir

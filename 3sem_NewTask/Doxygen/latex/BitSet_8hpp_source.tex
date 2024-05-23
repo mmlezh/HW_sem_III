@@ -1,0 +1,56 @@
+\hypertarget{BitSet_8hpp_source}{}\doxysection{/home/jogy/Рабочий стол/эвм/\+HW3/\+New\+Task/\+Bit\+Set.hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define OK\_OUT 0}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define ERROR\_OUT 1}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{classLineSegment}{LineSegment}}}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18 \textcolor{keyword}{private}:}
+\DoxyCodeLine{19     \textcolor{keywordtype}{int} min;}
+\DoxyCodeLine{20     \textcolor{keywordtype}{int} max;}
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLineSegment_a2cec520a8f1271f708229e5ea2fd2fb8}{set\_segment}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} new\_min, \textcolor{keyword}{const} \textcolor{keywordtype}{int} new\_max);}
+\DoxyCodeLine{33     \textcolor{keywordtype}{int} \mbox{\hyperlink{classLineSegment_a8760c24e52ab98d28a4619da53e412de}{get\_min}}();}
+\DoxyCodeLine{38     \textcolor{keywordtype}{int} \mbox{\hyperlink{classLineSegment_ab849fe92b2bf5e36cfaa6f7b0a781131}{get\_max}}();}
+\DoxyCodeLine{43     \textcolor{keywordtype}{int} \mbox{\hyperlink{classLineSegment_ae8d873807a915bfc594126b2600e3acb}{get\_lenght}}();}
+\DoxyCodeLine{44 \};}
+\DoxyCodeLine{50 \textcolor{keyword}{class }\mbox{\hyperlink{classBitSet}{BitSet}}}
+\DoxyCodeLine{51 \{}
+\DoxyCodeLine{52 \textcolor{keyword}{private}:}
+\DoxyCodeLine{53     \mbox{\hyperlink{classLineSegment}{LineSegment}} Ox;}
+\DoxyCodeLine{54     \mbox{\hyperlink{classLineSegment}{LineSegment}} Oy;}
+\DoxyCodeLine{55     \textcolor{keywordtype}{int} *values;}
+\DoxyCodeLine{56     \textcolor{keywordtype}{int} size;}
+\DoxyCodeLine{57 \textcolor{keyword}{public}:}
+\DoxyCodeLine{61     \mbox{\hyperlink{classBitSet_ac45e40bebdf5c87da0d8ca441094ab7c}{BitSet}}();}
+\DoxyCodeLine{68     \mbox{\hyperlink{classBitSet_a546766a80fde14b18075de0db1700edc}{BitSet}}(\mbox{\hyperlink{classLineSegment}{LineSegment}} X, \mbox{\hyperlink{classLineSegment}{LineSegment}} Y);}
+\DoxyCodeLine{74     \mbox{\hyperlink{classBitSet_a46c9e48f7e33dbf4d97db3397955273f}{BitSet}}(\mbox{\hyperlink{classBitSet}{BitSet}} \&\textcolor{keywordtype}{object});}
+\DoxyCodeLine{81     \textcolor{keywordtype}{int} \mbox{\hyperlink{classBitSet_a7c3169ddf8305d0689300a3d35bc3ebb}{delete\_value}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} x, \textcolor{keyword}{const} \textcolor{keywordtype}{int} y);}
+\DoxyCodeLine{85     \textcolor{keywordtype}{void} \mbox{\hyperlink{classBitSet_ab5afe88da8a8e3676883cf924a5a6742}{delete\_all}}();}
+\DoxyCodeLine{92     \textcolor{keywordtype}{int} \mbox{\hyperlink{classBitSet_ae949bba30237aa6e0f0b37050cc86095}{add\_value}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} x, \textcolor{keyword}{const} \textcolor{keywordtype}{int} y);}
+\DoxyCodeLine{99     \textcolor{keywordtype}{int} \mbox{\hyperlink{classBitSet_a940492bf741685cf2221b4f5c1ee048d}{get\_value}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} x, \textcolor{keyword}{const} \textcolor{keywordtype}{int} y);}
+\DoxyCodeLine{105     \textcolor{keywordtype}{int} \mbox{\hyperlink{classBitSet_af6f1240eeb5f21eef850002c95a4aa12}{get\_min}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} mode);}
+\DoxyCodeLine{111     \textcolor{keywordtype}{int} \mbox{\hyperlink{classBitSet_ad541fc73174ce8ab62710dbc31dfd96c}{get\_max}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} mode);}
+\DoxyCodeLine{116     \textcolor{keywordtype}{int} \mbox{\hyperlink{classBitSet_a197eac92c3019fde7043e8cfe2f4faf4}{get\_lenght}}();}
+\DoxyCodeLine{121     \mbox{\hyperlink{classLineSegment}{LineSegment}} \mbox{\hyperlink{classBitSet_ac146cb7de92948841f723d571d5b57b9}{get\_Ox}}();}
+\DoxyCodeLine{126     \mbox{\hyperlink{classLineSegment}{LineSegment}} \mbox{\hyperlink{classBitSet_aea5da560cb32474a10d6676d3f7e69a6}{get\_Oy}}();}
+\DoxyCodeLine{131     \mbox{\hyperlink{classBitSet}{BitSet}} \&\mbox{\hyperlink{classBitSet_ac17dc27c49d732dea9f6352c2b718e71}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{classBitSet}{BitSet}} \&\textcolor{keywordtype}{object});}
+\DoxyCodeLine{137     \mbox{\hyperlink{classBitSet}{BitSet}} \mbox{\hyperlink{classBitSet_a1787efcb3eb61406a213406baf64f490}{operator+}}(\textcolor{keyword}{const} \mbox{\hyperlink{classBitSet}{BitSet}} \&\textcolor{keywordtype}{object})\textcolor{keyword}{const};}
+\DoxyCodeLine{143     \mbox{\hyperlink{classBitSet}{BitSet}} \mbox{\hyperlink{classBitSet_ad79e9eb7cdb37c321b4cad12ab25ded3}{operator*}}(\textcolor{keyword}{const} \mbox{\hyperlink{classBitSet}{BitSet}} \&\textcolor{keywordtype}{object})\textcolor{keyword}{const};}
+\DoxyCodeLine{150     \textcolor{keywordtype}{int} \mbox{\hyperlink{classBitSet_a23be866f951d419d129419908f710c1c}{change\_area}}(\textcolor{keyword}{const} \mbox{\hyperlink{classLineSegment}{LineSegment}} X, \textcolor{keyword}{const} \mbox{\hyperlink{classLineSegment}{LineSegment}} Y);}
+\DoxyCodeLine{155     \textcolor{keywordtype}{int} \mbox{\hyperlink{classBitSet_a4d8ef2f6297d40bf11185ae534900fd6}{count\_points}}();}
+\DoxyCodeLine{161     \textcolor{keywordtype}{int} \mbox{\hyperlink{classBitSet_a5d6606876898d7554f9673cfd77fabf4}{get\_point}}(\textcolor{keywordtype}{int} it);}
+\DoxyCodeLine{165     \mbox{\hyperlink{classBitSet_ab6f2bc02f3e1185fd86b163e886b1dbf}{\string~BitSet}}();}
+\DoxyCodeLine{166 }
+\DoxyCodeLine{175     \textcolor{keyword}{friend} \textcolor{keywordtype}{int} \mbox{\hyperlink{classBitSet_ac0735c48437d8e5a37db496d2f8e07af}{rBitSet}}(FILE *input, \mbox{\hyperlink{classBitSet}{BitSet}} \&\textcolor{keywordtype}{object}, \mbox{\hyperlink{classLineSegment}{LineSegment}} X, \mbox{\hyperlink{classLineSegment}{LineSegment}} Y);}
+\DoxyCodeLine{182     \textcolor{keyword}{friend} \textcolor{keywordtype}{void} \mbox{\hyperlink{classBitSet_a8355cce72f3fba83849d557da785f8e0}{wBitSet}}(FILE *output, \mbox{\hyperlink{classBitSet}{BitSet}} \&\textcolor{keywordtype}{object});}
+\DoxyCodeLine{183 \};}
+
+\end{DoxyCode}
